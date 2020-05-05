@@ -100,6 +100,7 @@ h6 {
 .nav-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .nav-btn {
   background: transparent;
@@ -299,11 +300,11 @@ h6 {
 /* end pf featured rooms */
 /* room */
 .room {
-  box-shadow: var(--lightShadow);
+  /* box-shadow: var(--lightShadow); */
   transition: var(--mainTransition);
 }
 .room:hover {
-  box-shadow: var(--darkShadow);
+  box-shadow: var(--lightShadow);
 }
 
 .img-container {
@@ -340,7 +341,7 @@ h6 {
   transition: all 0.3s linear;
 }
 .img-container:hover {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.9);
 }
 .img-container:hover img {
   opacity: 0.3;
@@ -510,4 +511,18 @@ h6 {
     width: 95vw;
     max-width: 1170px;
   }
+}
+
+.nav-header a {
+  color: black;
+  text-decoration: none;
+  transition: 1s;
+}
+.nav-logo {
+  font-size: 1.25rem;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.nav-logo:hover {
+  color: var(--primaryColor);
 }
